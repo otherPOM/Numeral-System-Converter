@@ -16,3 +16,7 @@ To get a string with the answer, use the Long.toString(sourceNumber, destination
 
 ## Stage 4
 In this stage, you should add support for reading the source number in the given base and converting it to another given base.
+
+## Stage 5
+Implement fractional numbers conversion using described algorithm.
+
