@@ -6,20 +6,22 @@ public class Main {
     private static final Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
-        var num = scan.nextInt();
+        var sRadix = scan.nextInt();
+        scan.nextLine();
+        var num = scan.nextLine();
         var radix = scan.nextInt();
-        String prefix = "";
-        switch (radix) {
-            case 2:
-                prefix = "0b";
-                break;
-            case 8:
-                prefix = "0";
-                break;
-            case 16:
-                prefix = "0x";
-                break;
+
+        int numInDec;
+        if (sRadix == 1) {
+            numInDec = num.length();
+        } else {
+            numInDec = Integer.parseInt(num, sRadix);
         }
-        System.out.println(prefix + Long.toString(num, radix));
+
+        if (radix == 1) {
+            System.out.println("1".repeat(numInDec));
+        } else {
+            System.out.println(Integer.toString(numInDec, radix));
+        }
     }
 }

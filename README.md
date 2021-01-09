@@ -14,3 +14,5 @@ Now let's implement a simple converter. It will convert the given decimal number
 
 To get a string with the answer, use the Long.toString(sourceNumber, destinationRadix) expression. Note that the expected output is a String, because Java implicitly converts 0/0b/0x concatenated numbers to their decimal representation.
 
+## Stage 4
+In this stage, you should add support for reading the source number in the given base and converting it to another given base.
