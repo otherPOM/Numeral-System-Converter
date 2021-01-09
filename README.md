@@ -20,3 +20,5 @@ In this stage, you should add support for reading the source number in the given
 ## Stage 5
 Implement fractional numbers conversion using described algorithm.
 
+## Stage 6
+In this final stage, we will make sure the program can handle errors like that. At this point, you can implement this without the `try catch` construction. Use the following rule of thumb: if you can avoid exception-based logic, avoid it!
